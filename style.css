@@ -14,6 +14,8 @@ input {
     background-color: white;
     border: 1px solid #ccc;
     text-align: center;
+    height: 18px;
+    font-size: 14px;
 }
 
 input:focus {
@@ -24,7 +26,7 @@ button {
     margin-top: 10px;
 }
 
-@media (max-width: 1000px) {
+/* @media (max-width: 1000px) {
 
       .contents {
         position: fixed;
@@ -34,6 +36,6 @@ button {
         transform: translate(-50%, -50%);
        }
 
-}
+} */
 
 

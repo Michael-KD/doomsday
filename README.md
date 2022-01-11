@@ -1,1 +1,3 @@
 # doomsday
+
+- add point tracking
