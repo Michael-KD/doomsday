@@ -134,6 +134,7 @@ function generateRandomDate() {
     document.getElementById('date').innerHTML = userDate;
     dayOfWeek = dateFormat(date, "dddd");
 }  
+generateRandomDate()
 
 document.getElementById('userInput').addEventListener("input", function (e) {
     if (this.value.toLowerCase() == dayOfWeek.toLowerCase()) {
