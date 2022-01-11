@@ -1,0 +1,39 @@
+.contents {
+    /* display: flex; */
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    align-items: center;
+    /* justify-content: center; */
+    text-align: center;
+}
+
+input {
+    background-color: white;
+    border: 1px solid #ccc;
+    text-align: center;
+}
+
+input:focus {
+    outline:none;
+}
+
+button {
+    margin-top: 10px;
+}
+
+@media (max-width: 1000px) {
+
+      .contents {
+        position: fixed;
+        top: 50%;
+        left: 50%;
+        -webkit-transform: translate(-50%, -50%);
+        transform: translate(-50%, -50%);
+       }
+
+}
+
+
