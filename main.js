@@ -126,6 +126,8 @@ Date.prototype.format = function (mask, utc) {
 
 var dayOfWeek;
 var userDate;
+var complete;
+var correct = 0;
 document.getElementById('hide').style.display = 'none';
 
 
@@ -140,12 +142,18 @@ function generateRandomDate() {
     document.getElementById('userInput').value = "";
     document.getElementById('hide').style.display = 'none';
     document.getElementById('show').style.display = 'block';
+    complete = false;
 }  
 generateRandomDate()
 
 document.getElementById('userInput').addEventListener("input", function (e) {
     if (this.value.toLowerCase() == dayOfWeek.toLowerCase()) {
         document.body.style.backgroundColor = "#00b533";
+        if (complete == false) {
+            correct++;
+            document.getElementById('correct').innerHTML = correct;
+            complete = true;
+        }
     } else {
         document.body.style.backgroundColor = "#fc5930";
     }

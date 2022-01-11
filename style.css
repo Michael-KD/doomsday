@@ -12,14 +12,14 @@
 
 input {
     background-color: white;
-    border: 1px solid #ccc;
+    border: 1px solid white;
     text-align: center;
     height: 18px;
     font-size: 14px;
 }
 
 input:focus {
-    outline:none;
+    outline: none;
 }
 
 #date {
@@ -45,4 +45,11 @@ body {
 img {
     height: 28px;
     width: 28px;
+}
+
+#correct-div {
+    position: fixed;
+    top: -6px;
+    right: 10px;
+    font-size: 18px;
 }
