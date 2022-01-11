@@ -138,6 +138,8 @@ function generateRandomDate() {
     dayOfWeek = dateFormat(date, "dddd");
     document.body.style.backgroundColor = "#fc5930";
     document.getElementById('userInput').value = "";
+    document.getElementById('hide').style.display = 'none';
+    document.getElementById('show').style.display = 'block';
 }  
 generateRandomDate()
 

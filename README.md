@@ -1,3 +1,4 @@
 # doomsday
 
-- add point tracking
+- add score tracking
+- timer (visible or not)
