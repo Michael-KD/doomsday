@@ -22,20 +22,19 @@ input:focus {
     outline:none;
 }
 
+#date {
+    font-size: 30px;
+}
+
 button {
     margin-top: 10px;
 }
 
-/* @media (max-width: 1000px) {
+@media (max-width: 600px) {
 
-      .contents {
-        position: fixed;
-        top: 50%;
-        left: 50%;
-        -webkit-transform: translate(-50%, -50%);
-        transform: translate(-50%, -50%);
-       }
-
-} */
+    #date {
+        font-size: 8vw;
+    }
+}
 
 
