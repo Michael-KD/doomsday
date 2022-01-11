@@ -38,3 +38,11 @@ button {
 }
 
 
+body {
+    background-color: transparent;
+}
+
+img {
+    height: 28px;
+    width: 28px;
+}

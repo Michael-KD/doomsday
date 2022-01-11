@@ -125,12 +125,15 @@ Date.prototype.format = function (mask, utc) {
 };
 
 var dayOfWeek;
+var userDate;
+document.getElementById('hide').style.display = 'none';
+
 
 function generateRandomDate() {
     var start = new Date(1700, 1, 1);
     var end = new Date(2199, 12, 31);
     var date = new Date(+start + Math.random() * (end - start));
-    var userDate = dateFormat(date, "mmmm dS, yyyy");
+    userDate = dateFormat(date, "mmmm dS, yyyy");
     document.getElementById('date').innerHTML = userDate;
     dayOfWeek = dateFormat(date, "dddd");
     document.body.style.backgroundColor = "#fc5930";
@@ -146,3 +149,14 @@ document.getElementById('userInput').addEventListener("input", function (e) {
     }
 });
 
+function hideDate() {
+    document.getElementById('show').style.display = 'none';
+    document.getElementById('hide').style.display = 'block';
+    document.getElementById('date').innerHTML= "????";
+}
+
+function showDate() {
+    document.getElementById('hide').style.display = 'none';
+    document.getElementById('show').style.display = 'block';
+    document.getElementById('date').innerHTML= userDate;
+}
